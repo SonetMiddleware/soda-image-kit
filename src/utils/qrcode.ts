@@ -80,7 +80,7 @@ export const decodeQrcodeFromImgSrc = async (
         const result = qrcodeDecoder
           .setOptions({ canOverwriteImage: false })
           .decode(imageData!.data, imageData!.width, imageData!.height)
-        console.log('decodeQrcodeFromImgSrc：', result)
+        // console.log('decodeQrcodeFromImgSrc：', result)
         resolve(result?.data)
       } catch (err) {
         console.log(err)
